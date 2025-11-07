@@ -14,6 +14,7 @@ import connectDB from './config/database';
 import { initializeFirebaseAdmin } from './config/firebaseAdmin';
 
 // Import routes
+import authRoutes from './modules/auth/routes/authRoutes';
 import adminRoutes from './modules/admin/routes';
 
 // Initialize Express app
@@ -95,6 +96,9 @@ app.get('/health', (req: Request, res: Response) => {
     environment: process.env.NODE_ENV || 'development'
   });
 });
+
+// Auth routes (no rate limiting)
+app.use('/auth', authRoutes);
 
 // API routes
 app.use('/api/admin', adminRoutes);

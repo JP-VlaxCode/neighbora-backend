@@ -17,11 +17,10 @@
     "sourceMap": true,
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"],
-      "@modules/*": ["./modules/*"],
-      "@config/*": ["./config/*"],
-      "@middleware/*": ["./middleware/*"],
-      "@utils/*": ["./utils/*"]
+      "@middleware/*": ["middleware/*"],
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["src/**/*"],

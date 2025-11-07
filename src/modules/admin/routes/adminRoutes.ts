@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { requireAdmin } from '@middleware/auth';
+import { requireAdmin } from '../../../middleware/auth';
 import {
   verifyAdminInDB,
   getAllAdmins,

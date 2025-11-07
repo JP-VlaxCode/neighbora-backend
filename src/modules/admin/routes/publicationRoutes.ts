@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { verifyToken, requireAdmin } from '@middleware/auth';
+import { verifyToken, requireAdmin } from '../../../middleware/auth';
 import {
   getCondominiumPublications,
   getPublicationById,

@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import { AuthRequest } from '@middleware/auth';
+import { AuthRequest } from '../../../middleware/auth';
 import Publication from '../models/Publication';
 import Condominium from '../models/Condominium';
 

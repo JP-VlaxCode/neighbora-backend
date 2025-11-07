@@ -1,7 +1,7 @@
 import { Response } from 'express';
-import { AuthRequest } from '../../middleware/auth';
+import { AuthRequest } from '../../../middleware/auth';
 import Admin from '../models/Admin';
-import { admin as firebaseAdmin } from '../../config/firebaseAdmin';
+import { admin as firebaseAdmin } from '../../../config/firebaseAdmin';
 
 /**
  * Verify if user is admin in MongoDB

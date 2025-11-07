@@ -1,7 +1,6 @@
 import { Response } from 'express';
 import { AuthRequest } from '../../../middleware/auth';
 import Property from '../models/Property';
-import Condominium from '../models/Condominium';
 
 /**
  * Get all residents for a condominium
